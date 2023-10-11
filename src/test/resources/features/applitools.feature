@@ -11,4 +11,4 @@ Feature: practice application page
     Then I select "United States of America" from country field
     And  I add "This is the testing" to note field
     When I click submit button
-    Then I close the browser
+#    Then I close the browser

@@ -1,5 +1,7 @@
 package steps;
 
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -17,10 +19,16 @@ public class practice_step_definition {
     private practice_login_page login_page;
     private practice_main_page main_page;
 
-    @Given("I open the practice application home page")
-    public void iOpenThePracticeApplicationHomePage() {
+    @Before
+    public void setUp(){
         WebDriverManager.firefoxdriver().setup();
         driver = new FirefoxDriver();
+        driver.manage().window().maximize();
+        System.out.println("Browser has been opened");
+    }
+
+    @Given("I open the practice application home page")
+    public void iOpenThePracticeApplicationHomePage() {
         login_page = new practice_login_page(driver);
         main_page = new practice_main_page(driver);
         driver.get("https://testpages.eviltester.com/styled/index.html");
@@ -55,11 +63,13 @@ public class practice_step_definition {
         login_page.enterNote(note);
     }
 
+    @After
     @Then("I close the browser")
     public void iCloseBrowser() {
         if (driver != null) {
             driver.quit();
         }
+        System.out.println("I'm closing the Browser");
     }
 
 

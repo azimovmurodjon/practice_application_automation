@@ -7,8 +7,11 @@ repositories {
 }
 
 dependencies {
-    implementation 'io.cucumber:cucumber-java:7.3.0'
-    implementation 'io.cucumber:cucumber-junit:7.3.0'
+//    implementation 'io.cucumber:cucumber-java:7.3.0'
+//    implementation 'io.cucumber:cucumber-junit:7.3.0'
+    testImplementation group: 'io.cucumber', name: 'cucumber-junit', version: '7.14.0'
+    implementation group: 'io.cucumber', name: 'cucumber-java', version: '7.14.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.1.1'
     implementation 'org.seleniumhq.selenium:selenium-java:4.1.1'
     implementation 'io.github.bonigarcia:webdrivermanager:5.0.3'
 //    implementation 'com.applitools:eyes-selenium-java3:3.166.2'
