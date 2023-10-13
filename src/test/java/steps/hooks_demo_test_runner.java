@@ -8,10 +8,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         publish = false,
         monochrome = true,
-        features = "src/test/resources/features",
-        glue = "steps",
+        features = "src/test/resources/hooks_demo/hooks_demo.feature",
+        glue = "steps_for_hooks_demo",
         plugin = {"pretty","html:target/cucumber.html"}
 
 )
-public class test_runner {
+public class hooks_demo_test_runner {
 }
