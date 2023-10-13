@@ -9,8 +9,7 @@ import io.cucumber.java.en.When;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import pages.practice_login_page;
-import pages.practice_main_page;
+import pages.*;
 
 
 public class practice_step_definition {
@@ -18,6 +17,10 @@ public class practice_step_definition {
     private WebDriver driver;
     private practice_login_page login_page;
     private practice_main_page main_page;
+    private  web_page_example webPageExample;
+    private  element_attributes_examples elementAttributesExamples;
+    private locators_find_by_playground_test_page locatorsFindByPlaygroundTestPage;
+    private webdriver_example_page webdriverExamplePage;
 
     @Before
     public void setUp(){
@@ -31,6 +34,10 @@ public class practice_step_definition {
     public void iOpenThePracticeApplicationHomePage() {
         login_page = new practice_login_page(driver);
         main_page = new practice_main_page(driver);
+        webPageExample = new web_page_example(driver);
+        locatorsFindByPlaygroundTestPage = new locators_find_by_playground_test_page(driver);
+        elementAttributesExamples = new element_attributes_examples(driver);
+        webdriverExamplePage = new webdriver_example_page(driver);
         driver.get("https://testpages.eviltester.com/styled/index.html");
     }
 
@@ -77,4 +84,25 @@ public class practice_step_definition {
     public void iClickSubmitButton() {
         login_page.clickSubmitBtn();
     }
+
+    @Given("I navigate to Basic Web Page Example")
+    public void i_navigate_to_basic_web_page_example() {
+        login_page.basic_web_page_example_click();
+    }
+
+    @Given("I navigate to Element Attributes Examples")
+    public void i_navigate_to_element_attributes_examples() {
+        login_page.element_attributes_examples_click();
+    }
+
+    @Given("I navigate to Locators - Find By Playground Test Page")
+    public void i_navigate_to_locators_find_by_playground_test_page() {
+        login_page.locators_find_by_playground_test_page_click();
+    }
+
+    @Given("I navigate to WebDriver Example Page")
+    public void i_navigate_to_web_driver_example_page() {
+        login_page.webdriver_example_page_click();
+    }
+
 }

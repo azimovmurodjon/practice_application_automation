@@ -19,6 +19,10 @@ public class practice_login_page {
     private final By age_elm = By.id("age");
     private final By note_elm = By.id("notes");
     private final By submit_elm = By.xpath("//input[@type='submit']");
+    private final By basic_web_page_examples = By.id("basicpagetest");
+    private final  By element_attributes_examples = By.id("elementattributestest");
+    private final By locators_find_by_playground_test_page = By.id("findbytest");
+    private final By webdriver_example_page = By.id("webdriverexamplepage");
 
 
     public practice_login_page(WebDriver driver) {
@@ -75,6 +79,22 @@ public class practice_login_page {
 
     public void clickSubmitBtn() {
         driver.findElement(submit_elm).click();
+    }
+
+    public void basic_web_page_example_click() {
+        driver.findElement(basic_web_page_examples).click();
+    }
+
+    public void element_attributes_examples_click() {
+        driver.findElement(element_attributes_examples).click();
+    }
+
+    public void locators_find_by_playground_test_page_click() {
+        driver.findElement(locators_find_by_playground_test_page).click();
+    }
+
+    public void webdriver_example_page_click() {
+        driver.findElement(webdriver_example_page).click();
     }
 
     //Remove upper code

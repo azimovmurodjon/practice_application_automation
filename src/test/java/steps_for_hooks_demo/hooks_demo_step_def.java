@@ -22,11 +22,11 @@ public class hooks_demo_step_def {
     private WebDriver driver;
 
 
-    @Before
-    public static void setUp() {
-        System.out.println("   I've Started Validation   ");
-        Helper.setUpDriver();
-    }
+//    @Before
+//    public static void setUp() {
+//        System.out.println("   I've Started Validation   ");
+//        Helper.setUpDriver();
+//    }
 
 
     @After
