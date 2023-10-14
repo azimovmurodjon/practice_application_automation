@@ -21,7 +21,7 @@ public class practice_step_definition {
     private  element_attributes_examples elementAttributesExamples;
     private locators_find_by_playground_test_page locatorsFindByPlaygroundTestPage;
     private webdriver_example_page webdriverExamplePage;
-
+    private table_test_page tableTestPage;
     @Before
     public void setUp(){
         WebDriverManager.firefoxdriver().setup();
@@ -38,6 +38,7 @@ public class practice_step_definition {
         locatorsFindByPlaygroundTestPage = new locators_find_by_playground_test_page(driver);
         elementAttributesExamples = new element_attributes_examples(driver);
         webdriverExamplePage = new webdriver_example_page(driver);
+        tableTestPage = new table_test_page(driver);
         driver.get("https://testpages.eviltester.com/styled/index.html");
     }
 
@@ -103,6 +104,11 @@ public class practice_step_definition {
     @Given("I navigate to WebDriver Example Page")
     public void i_navigate_to_web_driver_example_page() {
         login_page.webdriver_example_page_click();
+    }
+
+    @Given("I navigate to Table Test Page")
+    public void i_navigate_to_table_test_page() {
+        login_page.table_test_page_click();
     }
 
 }
