@@ -23,6 +23,7 @@ public class practice_login_page {
     private final  By element_attributes_examples = By.id("elementattributestest");
     private final By locators_find_by_playground_test_page = By.id("findbytest");
     private final By webdriver_example_page = By.id("webdriverexamplepage");
+    private final By table_test_page = By.id("tablestest");
 
 
     public practice_login_page(WebDriver driver) {
@@ -95,6 +96,10 @@ public class practice_login_page {
 
     public void webdriver_example_page_click() {
         driver.findElement(webdriver_example_page).click();
+    }
+
+    public void table_test_page_click() {
+        driver.findElement(table_test_page).click();
     }
 
     //Remove upper code
