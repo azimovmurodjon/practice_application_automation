@@ -24,6 +24,9 @@ public class practice_login_page {
     private final By locators_find_by_playground_test_page = By.id("findbytest");
     private final By webdriver_example_page = By.id("webdriverexamplepage");
     private final By table_test_page = By.id("tablestest");
+    private final By dynamicTableTestPage = By.id("dynamictablestest");
+    private final By alerts_java_script = By.id("alerttest");
+    private final By fake_alerts = By.id("fakealerttest");
 
 
     public practice_login_page(WebDriver driver) {
@@ -100,6 +103,18 @@ public class practice_login_page {
 
     public void table_test_page_click() {
         driver.findElement(table_test_page).click();
+    }
+
+    public void dynamic_table_test_page_click() {
+        driver.findElement(dynamicTableTestPage).click();
+    }
+
+    public void alerts_java_script_click() {
+        driver.findElement(alerts_java_script).click();
+    }
+
+    public void fake_alert_click() {
+        driver.findElement(fake_alerts).click();
     }
 
     //Remove upper code

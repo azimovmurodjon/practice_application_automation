@@ -25,6 +25,19 @@ Feature: Home Page Validation
   Scenario: Navigate to WebDriver Example Page
     Given I navigate to WebDriver Example Page
 
-    Scenario: Navigate to Table Test Page
-      Given I navigate to Table Test Page
+  @HTML_Tag_Examples
+  Scenario: Navigate to Table Test Page
+    Given I navigate to Table Test Page
+
+  Scenario: Navigate to Dynamic Table Test Page
+    Given I navigate to Dynamic Table Test Page
+
+  @Alerts
+  Scenario: Navigate to Alerts (JavaScript)
+    Given I navigate to Alerts (JavaScript)
+
+  Scenario: Navigate to Fake Alerts
+    Given I navigate to Fake Alerts
+
+
 

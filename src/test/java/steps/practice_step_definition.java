@@ -22,6 +22,8 @@ public class practice_step_definition {
     private locators_find_by_playground_test_page locatorsFindByPlaygroundTestPage;
     private webdriver_example_page webdriverExamplePage;
     private table_test_page tableTestPage;
+    private dynamic_table_test_page dynamicTableTestPage;
+
     @Before
     public void setUp(){
         WebDriverManager.firefoxdriver().setup();
@@ -39,6 +41,7 @@ public class practice_step_definition {
         elementAttributesExamples = new element_attributes_examples(driver);
         webdriverExamplePage = new webdriver_example_page(driver);
         tableTestPage = new table_test_page(driver);
+        dynamicTableTestPage = new dynamic_table_test_page(driver);
         driver.get("https://testpages.eviltester.com/styled/index.html");
     }
 
@@ -110,5 +113,23 @@ public class practice_step_definition {
     public void i_navigate_to_table_test_page() {
         login_page.table_test_page_click();
     }
+
+    @Given("I navigate to Dynamic Table Test Page")
+    public void i_navigate_to_dynamic_table_test_page() {
+      login_page.dynamic_table_test_page_click();
+    }
+
+    @Given("I navigate to Alerts \\(JavaScript)")
+    public void i_navigate_to_alerts_java_script() {
+        login_page.alerts_java_script_click();
+
+    }
+
+    @Given("I navigate to Fake Alerts")
+    public void i_navigate_to_fake_alerts() {
+        login_page.fake_alert_click();
+
+    }
+
 
 }
