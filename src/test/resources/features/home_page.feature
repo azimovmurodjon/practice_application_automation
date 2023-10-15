@@ -38,6 +38,3 @@ Feature: Home Page Validation
 
   Scenario: Navigate to Fake Alerts
     Given I navigate to Fake Alerts
-
-
-
