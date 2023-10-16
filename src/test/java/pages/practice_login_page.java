@@ -27,6 +27,9 @@ public class practice_login_page {
     private final By dynamicTableTestPage = By.id("dynamictablestest");
     private final By alerts_java_script = By.id("alerttest");
     private final By fake_alerts = By.id("fakealerttest");
+    private final By html_form_example = By.id("htmlformtest");
+    private final By html5_element_form_test_page = By.id("html5formtest");
+    private final By windows_link_test_page = By.id("windowstest");
 
 
     public practice_login_page(WebDriver driver) {
@@ -115,6 +118,18 @@ public class practice_login_page {
 
     public void fake_alert_click() {
         driver.findElement(fake_alerts).click();
+    }
+
+    public void html_form_example_click() {
+        driver.findElement(html_form_example).click();
+    }
+
+    public void html5_element_form_test_page_click() {
+        driver.findElement(html5_element_form_test_page).click();
+    }
+
+    public void windows_link_test_page_click() {
+        driver.findElement(windows_link_test_page).click();
     }
 
     //Remove upper code

@@ -131,5 +131,23 @@ public class practice_step_definition {
 
     }
 
+    @Given("I navigate to HTML Form Example")
+    public void i_navigate_to_html_form_example() {
+        login_page.html_form_example_click();
+
+    }
+
+    @Given("I navigate to HTML5 Element Form Test Page")
+    public void i_navigate_to_html5_element_form_test_page() {
+        login_page.html5_element_form_test_page_click();
+
+    }
+
+    @Given("I navigate to Windows Link Test Page")
+    public void i_navigate_to_windows_link_test_page() {
+        login_page.windows_link_test_page_click();
+
+    }
+
 
 }
