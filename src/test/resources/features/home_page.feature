@@ -38,3 +38,14 @@ Feature: Home Page Validation
 
   Scenario: Navigate to Fake Alerts
     Given I navigate to Fake Alerts
+
+  @Forms_&_Windows
+  Scenario: Navigate to HTML Form Example
+    Given I navigate to HTML Form Example
+
+  Scenario: Navigate to HTML5 Element Form Test Page
+    Given I navigate to HTML5 Element Form Test Page
+
+  Scenario: Navigate to Windows Link Test Page
+    Given I navigate to Windows Link Test Page
+
