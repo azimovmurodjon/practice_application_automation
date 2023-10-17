@@ -49,3 +49,27 @@ Feature: Home Page Validation
   Scenario: Navigate to Windows Link Test Page
     Given I navigate to Windows Link Test Page
 
+  @JavaScript
+  Scenario: Navigate to Ajax JavaScript Examples
+    Given I navigate to Ajax JavaScript Examples
+
+  Scenario: Navigate to Drag And Drop Test Page (JavaScript)
+    Given I navigate to Drag And Drop Test Page (JavaScript)
+
+  Scenario:  Navigate to Field Validation With JavaScript Example
+    Given I navigate to Field Validation With JavaScript Example
+
+  Scenario: Navigate to Key Click Display Test Page
+    Given I navigate to Key Click Display Test Page
+
+  Scenario: Navigate to Redirect (JavaScript) Test Page
+    Given I navigate to Redirect (JavaScript) Test Page
+
+  Scenario: Navigate to Refresh Test Page
+    Given I navigate to Refresh Test Page
+
+  Scenario: Navigate to Alerts (JavaScript)
+    Given I navigate to Alerts (JavaScript)
+
+    Scenario: Navigate to Events (JavaScript)
+      Given I navigate to Events (JavaScript)
